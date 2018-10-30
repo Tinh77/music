@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play with mp3</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body onload="load()">
+<table id="myMusic">
+    <tr>
+        <th>Id</th>
+        <th>Thumbnail</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+</table>
+<audio controls autoplay="autoplay">
+    <source id="musicFrame" type="audio/mpeg">
+</audio>
+<script src="myjs.js"></script>
+</body>
+</html>
