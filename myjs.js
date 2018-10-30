@@ -10,7 +10,8 @@
                 videoItem +=  '<td>'+ jsObject[i].id +'</td>';
                 videoItem += '<td> <img width="200px" src="' + jsObject[i].thumbnail+ '"> </td>';
                 videoItem += '<td>'+ jsObject[i].name +'</td>';
-                videoItem += '<td> <button type="button" onclick="doSomeThing('+ jsObject[i].link +')">Click Me!</button></td>';
+                videoItem += '<td> <button type="button" onclick="doSomeThing(\''+ jsObject[i].link +'\')" '+
+                'src="' + jsObject[i].thumbnail + '">Click Me!</button> </td>';
                 videoItem += '</tr>';
                 content += videoItem;
             }
@@ -22,6 +23,6 @@
 }
  var musicLink = document.getElementById('musicFrame');
 
- function doSomeThing(musicLink) {
-     musicLink.src = musicLink;
+ function doSomeThing(musicLink1) {
+     musicLink.src = musicLink1;
  }
